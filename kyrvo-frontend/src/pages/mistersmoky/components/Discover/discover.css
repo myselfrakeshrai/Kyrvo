@@ -1,0 +1,35 @@
+/* 
+Discover CSS 
+Author  - Rakesh Rai
+MailTo  - myselfrakeshrai@gmail.com
+Company - Kyrvo.co
+*/
+.ky-page-content {
+    align-items: center;
+}
+.ky-discover-card{
+    justify-content: center !important;
+    margin: auto;
+}
+.ky-card-media-img-long {
+    padding: 5px;
+}
+
+.ky-card-media-img-up {
+    padding: 5px;
+}
+
+.ky-card-media-img-down {
+    padding: 5px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+    .ky-page-content {
+        width: 100%;
+        margin: auto;
+        margin-top: 10px !important;
+        margin-left: 0 !important;
+        align-items: center; 
+    }
+}

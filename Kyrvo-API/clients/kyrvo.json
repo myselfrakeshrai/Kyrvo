@@ -1,0 +1,105 @@
+{
+  "compatibility_date": "2023-01-01",
+  "name": "kyrvo",
+  "vars": {
+    "MODULES": [
+      "blogs",
+      "blogTags",
+      "blogCategories",
+      "events",
+      "eventTags",
+      "eventTickets",
+      "eventTypes",
+      "eventCategories"
+    ],
+    "REQ_MODULES": [
+      "users",
+      "variables",
+      "roles",
+      "features",
+      "logs",
+      "media",
+      "permissions"
+    ],
+    "APP_URL": "http://localhost:5173",
+    "DOMAIN": "localhost",
+    "ENV": "DEV",
+    "STRIPE_KEY": "NA",
+    "STRIPE_WEBHOOK_SECRET": "NA",
+    "APP_CORS": [
+      "kyrvo.com",
+      "https://kyrvo.com",
+      "https://api.kyrvo.com"
+    ]
+  },
+  "site": {
+    "bucket": "./assets"
+  },
+  "d1_databases": [
+    {
+      "binding": "ae_d1",
+      "database_id": "023c8f99-e996-4cdd-b630-900bc5d3be24",
+      "database_name": "kyrvo",
+      "preview_database_id": "3b135b1b-4d05-4a92-8cbf-4f35c24190b3"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "ae_r2",
+      "bucket_name": "kyrvo",
+      "preview_bucket_name": "kyrvo-staging"
+    }
+  ],
+  "env": {
+    "dev": {
+      "vars": {
+        "MODULES": [],
+        "APP_URL": "http://localhost:5173",
+        "DOMAIN": "localhost",
+        "ENV": "DEV",
+        "STRIPE_KEY": "NA",
+        "STRIPE_WEBHOOK_SECRET": "NA"
+      },
+      "d1_databases": [
+        {
+          "binding": "ae_d1",
+          "database_id": "3b135b1b-4d05-4a92-8cbf-4f35c24190b3",
+          "database_name": "kyrvo",
+          "preview_database_id": "3b135b1b-4d05-4a92-8cbf-4f35c24190b3"
+        }
+      ],
+      "r2_buckets": [
+        {
+          "binding": "ae_r2",
+          "bucket_name": "kyrvo-staging",
+          "preview_bucket_name": "kyrvo-staging"
+        }
+      ]
+    },
+    "prod": {
+      "vars": {
+        "MODULES": [],
+        "APP_URL": "https://kyrvo.com",
+        "DOMAIN": "kyrvo.com",
+        "ENV": "PROD",
+        "STRIPE_KEY": "NA",
+        "STRIPE_WEBHOOK_SECRET": "NA"
+      },
+      "d1_databases": [
+        {
+          "binding": "ae_d1",
+          "database_id": "023c8f99-e996-4cdd-b630-900bc5d3be24",
+          "database_name": "kyrvo",
+          "preview_database_id": "3b135b1b-4d05-4a92-8cbf-4f35c24190b3"
+        }
+      ],
+      "r2_buckets": [
+        {
+          "binding": "ae_r2",
+          "bucket_name": "kyrvo",
+          "preview_bucket_name": "kyrvo-staging"
+        }
+      ]
+    }
+  }
+}

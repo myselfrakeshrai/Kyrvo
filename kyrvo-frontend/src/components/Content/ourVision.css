@@ -1,0 +1,19 @@
+/* 
+Our Vision Style CSS 
+Author  - Rakesh Rai
+MailTo  - myselfrakeshrai@gmail.com
+Company - Kyrvo.co
+*/
+
+.ky-our-vision-card{
+    padding: 2vh;
+    border-radius: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px !important;
+}
+
+.ky-our-vision-card-icon{
+    padding: 1vh;
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 50%;
+}

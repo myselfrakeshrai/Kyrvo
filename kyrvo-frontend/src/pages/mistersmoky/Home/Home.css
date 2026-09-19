@@ -1,0 +1,23 @@
+ .icon-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-container:hover {
+    transform: scale(1.1);
+  }
+  
+  .expand-icon:hover {
+    transform: scale(1.3);
+  }
+
+
+ 
+    

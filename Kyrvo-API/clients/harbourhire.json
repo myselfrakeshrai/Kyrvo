@@ -1,0 +1,142 @@
+{
+  "compatibility_date": "2023-01-01",
+  "name": "harbourhireapi",
+  "vars": {
+    "MODULES": [
+      "blogs",
+      "blogTags",
+      "blogCategories",
+      "events",
+      "eventTags",
+      "eventTickets",
+      "eventTypes",
+      "eventCategories"
+    ],
+    "REQ_MODULES": [
+      "users",
+      "variables",
+      "roles",
+      "features",
+      "logs",
+      "media",
+      "permissions"
+    ],
+    "APP_URL": "http://localhost:5173",
+    "DOMAIN": "localhost",
+    "ENV": "DEV",
+    "STRIPE_KEY": "NA",
+    "STRIPE_WEBHOOK_SECRET": "NA",
+    "APP_CORS": [
+      "harbourhire.com",
+      "https://harbourhire.com",
+      "https://api.harbourhire.com"
+    ]
+  },
+  "d1_databases": [
+    {
+      "binding": "ae_d1",
+      "database_id": "06816324-f42f-4f2e-a920-ea6e90019627",
+      "database_name": "aussie_everest",
+      "preview_database_id": "43cfc913-f415-4f47-b164-abbd90ee2a7f"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "ae_r2",
+      "bucket_name": "aussie-everest"
+    }
+  ],
+  "env": {
+    "dev": {
+      "d1_databases": [
+        {
+          "binding": "ae_d1",
+          "database_id": "43cfc913-f415-4f47-b164-abbd90ee2a7f",
+          "database_name": "harbour-hire-staging"
+        }
+      ],
+      "kv_namespaces": [
+        {
+          "binding": "ae_kv",
+          "id": "d50628fb20434e968833a1aaaf57af0b",
+          "preview_id": "d50628fb20434e968833a1aaaf57af0b"
+        }
+      ],
+      "r2_buckets": [
+        {
+          "binding": "ae_r2",
+          "bucket_name": "harbour-hire-staging",
+          "preview_bucket_name": "harbour-hire-staging"
+        }
+      ],
+      "vars": {
+        "APP_URL": "http://localhost:5173",
+        "DOMAIN": "localhost",
+        "ENV": "DEV",
+        "STRIPE_KEY": "NA",
+        "STRIPE_WEBHOOK_SECRET": "NA"
+      }
+    },
+    "staging": {
+      "d1_databases": [
+        {
+          "binding": "ae_d1",
+          "database_id": "43cfc913-f415-4f47-b164-abbd90ee2a7f",
+          "database_name": "harbour-hire-staging"
+        }
+      ],
+      "kv_namespaces": [
+        {
+          "binding": "ae_kv",
+          "id": "d50628fb20434e968833a1aaaf57af0b",
+          "preview_id": "d50628fb20434e968833a1aaaf57af0b"
+        }
+      ],
+      "r2_buckets": [
+        {
+          "binding": "ae_r2",
+          "bucket_name": "harbour-hire-staging",
+          "preview_bucket_name": "harbour-hire-staging"
+        }
+      ],
+      "vars": {
+        "APP_URL": "http://localhost:5173",
+        "DOMAIN": "localhost",
+        "ENV": "DEV",
+        "STRIPE_KEY": "NA",
+        "STRIPE_WEBHOOK_SECRET": "NA"
+      }
+    },
+    "prod": {
+      "d1_databases": [
+        {
+          "binding": "ae_d1",
+          "database_id": "06816324-f42f-4f2e-a920-ea6e90019627",
+          "database_name": "aussie_everest",
+          "preview_database_id": "43cfc913-f415-4f47-b164-abbd90ee2a7f"
+        }
+      ],
+      "kv_namespaces": [
+        {
+          "binding": "ae_kv",
+          "id": "d50628fb20434e968833a1aaaf57af0b",
+          "preview_id": "d50628fb20434e968833a1aaaf57af0b"
+        }
+      ],
+      "r2_buckets": [
+        {
+          "binding": "ae_r2",
+          "bucket_name": "aussie-everest",
+          "preview_bucket_name": "harbour-hire-staging"
+        }
+      ],
+      "vars": {
+        "APP_URL": "https://harbourhire.com",
+        "DOMAIN": "harbourhire.com",
+        "ENV": "PROD",
+        "STRIPE_KEY": "NA",
+        "STRIPE_WEBHOOK_SECRET": "NA"
+      }
+    }
+  }
+}

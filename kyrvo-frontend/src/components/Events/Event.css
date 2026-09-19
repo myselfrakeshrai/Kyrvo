@@ -1,0 +1,31 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.post-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.post-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtitle2-secondary {
+    color: var(--text-secondary-color) !important;
+}
+
+.span {
+    color: #d43c18;
+    margin-left: 20px;
+}

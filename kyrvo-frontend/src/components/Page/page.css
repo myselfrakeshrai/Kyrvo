@@ -1,0 +1,11 @@
+.page-container {
+    min-height: 100vh;
+}
+
+.progress-bar {
+    margin-bottom: 10px;
+}
+
+.alert {
+    margin-bottom: 10px;
+}

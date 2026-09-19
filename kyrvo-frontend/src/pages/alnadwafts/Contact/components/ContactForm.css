@@ -1,0 +1,24 @@
+  .container {
+    justify-content: center;
+   }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 30px !important;
+  }
+  
+  .text-field {
+    margin-bottom: 20px !important;
+     }
+  
+  .button {
+    border-radius: 50px !important;
+    min-width: 350px !important;
+    margin-bottom: 30px !important;
+  }
+  
+  .alert {
+    margin-top: 16px;  
+  }
+ 
+ 

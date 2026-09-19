@@ -1,0 +1,84 @@
+/* 
+Jumbotron Style CSS 
+Author  - Rakesh Rai
+MailTo  - myselfrakeshrai@gmail.com
+Company - Kyrvo.co
+*/
+.ky-jumbotron-sign {
+    background: transparent !important;
+    object-fit: contain;
+}
+
+.ky-jumbotron-sign-img {
+    margin: auto;
+    height: 100%;
+    width: 100% !important;
+}
+
+.ky-jumbotron-title {
+    font-weight: 900 !important;
+    font-size: 2.2rem !important;
+}
+
+.ky-jumbotron-subtitle {
+    font-weight: 600 !important;
+    border-radius: 50px !important;
+}
+
+.ky-jumbotron-desc {
+    margin: 10px 0 !important;
+    font-weight: 300 !important;
+    font-size: 1.5rem !important;
+}
+
+.ky-jumbotron-button {
+    border-radius: 20px !important;
+    font-size: 1rem !important;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .ky-jumbotron-sign-img {
+        height: 70px !important;
+        width: 100% !important;
+    }
+
+    .ky-jumbotron-title {
+        font-size: 24px !important;
+    }
+
+    .ky-jumbotron-subtitle {
+        font-size: 18px !important;
+    }
+
+    .ky-jumbotron-desc {
+        font-size: 14px !important;
+    }
+
+    .ky-jumbotron-button {
+
+        font-size: 0.75rem !important;
+    }
+}@media only screen and (max-width: 480px) {
+    .ky-jumbotron-sign-img {
+        height: 80px !important;
+        width: 100% !important;
+    }
+
+    .ky-jumbotron-title {
+        font-size: 22px !important;
+    }
+
+    .ky-jumbotron-subtitle {
+        font-size: 17px !important;
+    }
+
+    .ky-jumbotron-desc {
+        font-size: 13px !important;
+    }
+
+    .ky-jumbotron-button {
+
+        font-size: 10px !important;
+    }
+}

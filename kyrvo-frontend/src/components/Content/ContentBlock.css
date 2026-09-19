@@ -1,0 +1,36 @@
+.ky-content-block-container {
+    padding: 16px;
+}
+
+.ky-image-wrapper {
+    padding-right: 15px !important;
+    padding-left: 0 !important;
+    width: 49% !important;
+    align-content: center;
+}
+
+.ky-image-container {
+    width: 100%;
+    height: auto;
+}
+
+.ky-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.ky-description-body {
+    margin: 0;
+}
+
+.ky-button-container {
+    margin-top: 16px;
+    justify-content: flex-start !important;
+}
+
+.ky-text-container {
+    .ky-description-body{
+        font-size: 1.3rem;
+    }
+}

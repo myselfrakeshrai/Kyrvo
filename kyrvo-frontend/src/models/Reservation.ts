@@ -1,0 +1,33 @@
+export interface Reservation {
+  Id?: string;
+  Email?: string;
+  PhoneNumber?: string;
+  PickupDate?: string;
+  PickupTime?: string;
+  DropoffDate?: string;
+  DropoffTime?: string;
+  FirstName?: string;
+  LastName?: string;
+  PickupLocation?: string;
+  DropoffLocation?: string;
+  Price?: number;
+  Distance?: number;
+  IsPaid?: number;
+  PaymentMethod?: string;
+  AgencyId?: string;
+  VehicleId?: string;
+  AgentId?: string;
+  UserId?: string;
+  ReservationType?: string;
+  Hours?: number;
+  RefId?: string;
+  VehicleType?: string;
+  Remarks?: string;
+  Duration?: string;
+  Status?: number;
+  Flight?: string;
+  DurationSecs?: number;
+  DistanceText?: string;
+  CreatedOn?: number;
+  UpdatedOn?: number;
+}

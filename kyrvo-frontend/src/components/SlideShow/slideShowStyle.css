@@ -1,0 +1,154 @@
+/* 
+Slider CSS 
+Author  - Rakesh Rai
+MailTo  - myselfrakeshrai@gmail.com
+Company - Kyrvo.co
+*/
+.slick-arrow {
+  padding: 20px;
+  align-content: center;
+  border-radius: 20px;
+  margin: 0 60px;
+  z-index: 1;
+}
+
+.slick-list {
+  width: 100%;
+}
+.slick-prev:before, .slick-next:before{
+  font-size: 30px;
+  margin-left: -12px;
+  color: rgb(44 44 44 / 28%);
+  line-height: 0;
+}
+
+.ky-slider-image{
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* animations */
+/* Slide In */
+.slide-in {
+  animation: slideInLeft 1.3s ease-in-out forwards;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide out */
+.slide-out {
+  animation: slideInRight 1.3s ease-in-out forwards;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Fade In */
+.fade-in {
+  animation: fadeIn 1.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade Out */
+.fade-out {
+  animation: fadeOut 1.3s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Zoom In */
+.zoom-in {
+  animation: zoomIn 1.3s ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Zoom Out */
+.zoom-out {
+  animation: zoomOut 1.3s ease-in-out forwards;
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* Rotate In */
+.rotate-in {
+  animation: rotateIn 1.3s ease-in-out forwards;
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+/* Rotate Out */
+.rotate-out {
+  animation: rotateOut 1.3s ease-in-out forwards;
+}
+
+@keyframes rotateOut {
+  0% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+}

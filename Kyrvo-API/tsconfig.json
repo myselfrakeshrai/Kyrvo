@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "lib": [
+      "esnext"
+    ],
+    "types": [
+      "@cloudflare/workers-types",
+      "node"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "paths": {
+      "shared/*":["./src/modules/shared/*"],
+      "vehicle/*":["./src/modules/vehicle-rental"],
+      "utils/*":["./src/modules/shared/utils/*"],
+      "const":["./src/modules/shared/const.ts"],
+      "helpers/*":["./src/modules/shared/helpers/*"],
+      "modules/*":["./src/modules/*"]
+    }
+  },
+}

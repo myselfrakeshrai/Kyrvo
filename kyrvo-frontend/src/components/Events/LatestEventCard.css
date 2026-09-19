@@ -1,0 +1,70 @@
+.event-card-container {
+    margin-bottom: 20px;
+    width: 100% !important;
+}
+
+.event-card-header {
+    margin: auto;
+    text-align: center;
+}
+
+.event-card-grid {
+    margin: 0;
+    text-align: left;
+    width: 100% !important;
+}
+
+.event-card-no-events {
+    text-align: center;
+    color: textSecondary;
+}
+
+.event-card-link {
+    text-decoration: none;
+}
+
+.event-card {
+    display: flex !important;
+    height: 260px !important;
+    background-color: white !important;
+    padding-left: 0;
+}
+
+.latest-event-card {
+    padding: 0 !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+
+}
+
+.event-card-media {
+    width: 50% !important;
+    object-fit: cover;
+    max-height: 100%;
+}
+
+.event-card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f4f4f4 !important;
+}
+
+.event-card-body-content {
+    padding: 16px;
+}
+
+.event-card-title {
+    margin-bottom: 8px;
+}
+
+.event-card-category {
+    padding: 16px;
+    padding-top: 0;
+}
+
+.event-card-category-text {
+    color: #d43c18;
+    display: inline;
+}

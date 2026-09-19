@@ -1,0 +1,24 @@
+app
+    - modules
+        -individual modules
+            - route
+            - model
+            - utility
+            - helper
+        - shared module
+            - models
+            - utility
+            - helper
+            # any base classes
+
+    - index.ts //hono app create
+    - app.ts //register modules
+
+# client_id
+kyrvo
+ - tracker based client_id
+ - logging mechanic
+ - configuration
+ - cloudflare scripts => 
+                        - infra setup
+                        - migration scripts

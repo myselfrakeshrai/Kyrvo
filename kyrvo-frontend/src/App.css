@@ -1,0 +1,16 @@
+body{
+  margin: 0px!important;
+}
+#root {
+  background: #fff;
+  min-height: 100vh;
+  color: #000;
+  margin: 0px!important;
+}
+.MuiBottomNavigationAction-label{
+  font-size: 0.6rem!important;
+  color: #000;
+  text-overflow: ellipsis!important;
+  max-width: 100%;
+  overflow: hidden;
+}

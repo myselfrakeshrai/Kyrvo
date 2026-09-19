@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*storybook.log
+.env.prod
+/index.html
+
+#project specific files auto generated
+src/pages/AppRoutes.ts
+
+#ignoring Testing Json File
+test.json
+index.html
+public/favicon.ico
+
+#ignore template file
+src/templates/template.ts

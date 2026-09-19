@@ -1,0 +1,29 @@
+/* 
+AppNavigation Style CSS 
+Author  - Rakesh Rai
+MailTo  - myselfrakeshrai@gmail.com
+Company - Kyrvo.co
+*/
+
+/* AppDrawer */
+.ky-logo-mobile {
+    width: '50px';
+    height: 'auto';
+}
+.ky-logo-name {
+    margin: auto;
+}
+.ky-logo-desk {
+        width: '50px';
+        height: 'auto';
+        margin: 'auto';
+        margin-top: '5px';
+        margin-bottom: '5px';
+}
+.ky-nav-line {
+    margin: 'auto';
+    margin-top: '0';
+    margin-bottom: '0';
+    width: '88%';
+    border-radius: '2px',
+}

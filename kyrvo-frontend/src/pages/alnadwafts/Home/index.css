@@ -1,0 +1,33 @@
+.home-page-slider {
+    max-width: calc(100vw - 7px);
+    overflow-x: hidden;
+}
+
+.home-page-container {
+    max-width: lg;
+    margin: 0 auto !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.margin-tb {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.team-inner-container {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+}
+
+.event-main-container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+}

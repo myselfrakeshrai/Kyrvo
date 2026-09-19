@@ -1,0 +1,26 @@
+.ky-section-header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+.ky-section-header-title{
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize; 
+    font-size: 20px!important;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+
+}
+
+.ky-section-header-subtitle{
+    font-size: 15px !important;
+    margin-bottom: 15px !important;
+    font-weight: 400 !important;
+}
+
+@media only screen and (max-width: 480px) {
+    .ky-section-header-subtitle{
+        font-size: 10px !important;
+    }
+}

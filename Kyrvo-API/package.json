@@ -1,0 +1,46 @@
+{
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "wrangler dev src/index.ts --port=5000 --env dev",
+    "staging": "wrangler dev src/index.ts --port=5000 --env dev --remote",
+    "deploy:staging": "wrangler deploy --minify src/index.ts --env dev --keep-vars",
+    "deploy:prod": "wrangler deploy --minify src/index.ts --env prod --keep-vars",
+    "gendoc": "npx apidoc -i src/routes/ -o apidoc",
+    "migration": "npx wrangler d1 execute ae_d1 --local --file=./schemas/migration.sql",
+    "setupdata": "npx wrangler d1 execute ae_d1 --local --file=./schemas/coredata.sql",
+    "cleardata": "npx wrangler d1 execute ae_d1 --local --file=./schemas/cleardata.sql",
+    "query": "npx wrangler d1 execute ae_d1 --local",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext ts,tsx --fix",
+    "dbinit": "npm run cleardata & npm run migration & npm run setupdata",
+    "setup": "node ./setup",
+    "dev:alnadwafts": "npm run setup -- alnadwafts && npm run dev",
+    "dev:kyrvo": "npm run setup -- kyrvo && npm run dev",
+    "dev:harbourhire": "npm run setup -- harbourhire && npm run dev",
+    "dev:mistersmoky": "npm run setup -- mistersmoky && npm run dev"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.9.0",
+    "@hono/swagger-ui": "^0.2.1",
+    "@hono/zod-openapi": "^0.9.6",
+    "@openapitools/openapi-generator-cli": "^2.7.0",
+    "eslint": "^8.56.0",
+    "hono": "^3.7.2",
+    "kysely": "^0.26.3",
+    "stripe": "^14.9.0",
+    "uuid": "^9.0.1",
+    "workers-qb": "^1.1.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230914.0",
+    "@iarna/toml": "^2.2.5",
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "husky": "^9.0.7",
+    "miniflare": "^3.20231218.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.9.0"
+  }
+}

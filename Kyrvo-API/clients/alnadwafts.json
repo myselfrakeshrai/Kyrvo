@@ -1,0 +1,112 @@
+{
+  "compatibility_date": "2023-01-01",
+  "name": "alnadwafts",
+  "vars": {
+    "MODULES": [
+      "events",
+      "eventTags",
+      "newsletters",
+      "eventTicketTypes",
+      "eventReceipts",
+      "eventTicketTypes",
+      "eventCategories",
+      "contactUs",
+      "eventReceipts",
+      "photoAlbums"
+   ],
+    "REQ_MODULES": [
+      "users",
+      "variables",
+      "roles",
+      "features",
+      "logs",
+      "media",
+      "permissions",
+      "collections",
+      "collectionData"
+    ],
+    "APP_URL": "http://localhost:5173",
+    "DOMAIN": "localhost",
+    "ENV": "DEV",
+    "STRIPE_KEY": "NA",
+    "STRIPE_WEBHOOK_SECRET": "NA",
+    "APP_CORS": [
+      "https://alnadwafts.pages.dev",
+      "alnadwafts.pages.dev",
+      "alnadwafts.org",
+      "*.alnadwafts.org",
+      "https://www.alnadwafts.org",
+      "https://api.alnadwafts.org"
+    ]
+  },
+  "site": {
+    "bucket": "./assets"
+  },
+  "d1_databases": [
+    {
+      "binding": "ae_d1",
+      "database_id": "4d67976a-cc62-43ca-bfea-234a49ed6912",
+      "database_name": "alnadwafts",
+      "preview_database_id": "4d67976a-cc62-43ca-bfea-234a49ed6912"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "ae_r2",
+      "bucket_name": "alnadwafts",
+      "preview_bucket_name": "alnadwafts-staging"
+    }
+  ],
+  "env": {
+    "dev": {
+      "vars": {
+        "MODULES": [],
+        "APP_URL": "http://localhost:5173",
+        "DOMAIN": "localhost",
+        "ENV": "DEV",
+        "STRIPE_KEY": "NA",
+        "STRIPE_WEBHOOK_SECRET": "NA"
+      },
+      "d1_databases": [
+        {
+          "binding": "ae_d1",
+          "database_id": "4d67976a-cc62-43ca-bfea-234a49ed6912",
+          "database_name": "alnadwafts",
+          "preview_database_id": "4d67976a-cc62-43ca-bfea-234a49ed6912"
+        }
+      ],
+      "r2_buckets": [
+        {
+          "binding": "ae_r2",
+          "bucket_name": "alnadwafts-staging",
+          "preview_bucket_name": "alnadwafts-staging"
+        }
+      ]
+    },
+    "prod": {
+      "vars": {
+        "MODULES": [],
+        "APP_URL": "https://alnadwafts.pages.dev",
+        "DOMAIN": "alnadwafts.pages.dev",
+        "ENV": "PROD",
+        "STRIPE_KEY": "NA",
+        "STRIPE_WEBHOOK_SECRET": "NA"
+      },
+      "d1_databases": [
+        {
+          "binding": "ae_d1",
+          "database_id": "4d67976a-cc62-43ca-bfea-234a49ed6912",
+          "database_name": "alnadwafts",
+          "preview_database_id": "4d67976a-cc62-43ca-bfea-234a49ed6912"
+        }
+      ],
+      "r2_buckets": [
+        {
+          "binding": "ae_r2",
+          "bucket_name": "alnadwafts",
+          "preview_bucket_name": "alnadwafts"
+        }
+      ]
+    }
+  }
+}

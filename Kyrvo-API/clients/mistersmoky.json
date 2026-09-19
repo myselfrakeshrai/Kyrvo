@@ -1,0 +1,101 @@
+{
+  "compatibility_date": "2023-01-01",
+  "name": "mistersmoky",
+  "vars": {
+    "MODULES": [
+      "menuItems",
+      "orderItems",
+      "eventCategories",
+      "orders"
+    ],
+    "REQ_MODULES": [
+      "users",
+      "variables",
+      "roles",
+      "features",
+      "logs",
+      "media",
+      "permissions"
+    ],
+    "APP_URL": "http://localhost:5173",
+    "DOMAIN": "localhost",
+    "ENV": "DEV",
+    "STRIPE_KEY": "NA",
+    "STRIPE_WEBHOOK_SECRET": "NA",
+    "APP_CORS": [
+      "mistersmoky.com.au",
+      "https://mistersmoky.com.au",
+      "https://api.mistersmoky.com.au"
+    ]
+  },
+  "site": {
+    "bucket": "./assets"
+  },
+  "d1_databases": [
+    {
+      "binding": "ae_d1",
+      "database_id": "0e9d3006-e00d-4f1e-b54b-fec4af68528d",
+      "database_name": "mistersmoky",
+      "preview_database_id": "0e9d3006-e00d-4f1e-b54b-fec4af68528d"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "ae_r2",
+      "bucket_name": "mistersmoky",
+      "preview_bucket_name": "mistersmoky-staging"
+    }
+  ],
+  "env": {
+    "dev": {
+      "vars": {
+        "MODULES": [],
+        "APP_URL": "http://localhost:5173",
+        "DOMAIN": "localhost",
+        "ENV": "DEV",
+        "STRIPE_KEY": "NA",
+        "STRIPE_WEBHOOK_SECRET": "NA"
+      },
+      "d1_databases": [
+        {
+          "binding": "ae_d1",
+          "database_id": "3b10e9d3006-e00d-4f1e-b54b-fec4af68528d",
+          "database_name": "mistersmoky",
+          "preview_database_id": "0e9d3006-e00d-4f1e-b54b-fec4af68528d"
+        }
+      ],
+      "r2_buckets": [
+        {
+          "binding": "ae_r2",
+          "bucket_name": "mistersmoky-staging",
+          "preview_bucket_name": "mistersmoky-staging"
+        }
+      ]
+    },
+    "prod": {
+      "vars": {
+        "MODULES": [],
+        "APP_URL": "https://mistersmoky.com",
+        "DOMAIN": "mistersmoky.com",
+        "ENV": "PROD",
+        "STRIPE_KEY": "NA",
+        "STRIPE_WEBHOOK_SECRET": "NA"
+      },
+      "d1_databases": [
+        {
+          "binding": "ae_d1",
+          "database_id": "0e9d3006-e00d-4f1e-b54b-fec4af68528d",
+          "database_name": "mistersmoky",
+          "preview_database_id": "0e9d3006-e00d-4f1e-b54b-fec4af68528d"
+        }
+      ],
+      "r2_buckets": [
+        {
+          "binding": "ae_r2",
+          "bucket_name": "mistersmoky",
+          "preview_bucket_name": "mistersmoky-staging"
+        }
+      ]
+    }
+  }
+}

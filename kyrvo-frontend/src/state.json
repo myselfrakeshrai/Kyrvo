@@ -1,0 +1,15 @@
+[
+    { "value": "NSW", "label": "New South Wales" },
+    { "value": "VIC", "label": "Victoria" },
+    { "value": "QLD", "label": "Queensland" },
+    { "value": "WA", "label": "Western Australia" },
+    { "value": "SA", "label": "South Australia" },
+    { "value": "TAS", "label": "Tasmania" },
+    { "value": "ACT", "label": "Australian Capital Territory" },
+    { "value": "NT", "label": "Northern Territory" },
+    { "value": "JBT", "label": "Jervis Bay Territory" },
+    { "value": "CHC", "label": "Christmas Island" },
+    { "value": "COC", "label": "Cocos (Keeling) Islands" },
+    { "value": "NFK", "label": "Norfolk Island" }
+  ]
+  

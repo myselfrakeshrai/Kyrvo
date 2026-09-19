@@ -1,0 +1,48 @@
+/* EventListPage.css */
+
+.pageContainer {
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.contentBox {
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    width: 49.5%;
+}
+
+.searchInput {
+    margin-bottom: 20px;
+}
+
+.locationPickerBox {
+    display: flex;
+    align-items: center;
+    width: 49.5%;
+    margin-bottom: '20px'
+}
+
+.paginationButtons {
+    margin-top: 20px;
+}
+
+.searchContainer {
+    background-color: #fff;
+    border-radius: 8px;
+    padding-top: 20px;
+    display: flex;
+    gap: 0.5%;
+    width: 100% !important;
+    margin-left: 0 !important;
+}

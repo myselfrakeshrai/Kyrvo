@@ -1,0 +1,15 @@
+.contact-info {
+  margin-bottom: 30px;
+  margin-right: 20px;
+
+  .contact-info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 10px;
+  }
+
+  .contact-info-icon {
+    margin-right: 8px;
+  }
+}

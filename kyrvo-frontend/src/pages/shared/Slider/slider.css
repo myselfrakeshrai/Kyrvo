@@ -1,0 +1,19 @@
+/* 
+Slider CSS 
+Author  - Rakesh Rai
+MailTo  - myselfrakeshrai@gmail.com
+Company - Kyrvo.co
+*/
+
+.ky-slider {
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    border-radius: 0 !important;
+    background-position: center;
+}
+
+.ky-slider-image {
+    height: auto;
+    width: 100%;
+}

@@ -1,0 +1,46 @@
+.countdown-box {
+    /* padding-top: 24px; */
+    padding-bottom: 24px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.content-card {
+    background-color: #f4f4f4 !important;
+    box-shadow: none;
+    border: none;
+}
+
+.countdown-card-media {
+    height: 280px;
+}
+
+.countdown-card-title {
+    text-align: left;
+}
+
+.countdown-text {
+    text-align: left;
+    color: red;
+}
+
+.countdown-grid {
+    text-align: center;
+}
+
+.countdown-unit {
+    font-weight: bold;
+}
+
+.countdown-description {
+    color: textSecondary;
+}
+
+.countdown-description::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: red;
+}
